@@ -128,16 +128,15 @@
     <td width="70%" valign="top" align="justify">
       <p>
         I'm currently a fourth-year undergraduate student at 
-        <a href="https://www.fudan.edu.cn/">Fudan University</a>, majoring in Artificial Intelligence. 
+        <a href="https://www.fudan.edu.cn/">Fudan University</a>, majoring in Artificial Intelligence, and I work closely with <a href="https://github.com/Francis-Rings">Shuyuan Tu</a>.
         Starting Fall 2026, I will pursue my Ph.D. jointly at <a href="https://fvl.fudan.edu.cn/">Fudan Vision and Learning Laboratory</a>, <a href="https://www.fudan.edu.cn/">Fudan University</a> and 
         <a href="https://www.sii.edu.cn/">Shanghai Innovation Institute</a>, advised by 
         <a href="https://zxwu.azurewebsites.net/">Prof. Zuxuan Wu</a>.
         </p>
         
-        <p>
-        My research interests lie in Unified Models for both Understanding and Generation, 
-        with a focus on Generative AI and Multimodal Intelligence.
-        </p>
+      <p>
+        My research interests lie in visual generation and understanding, with a focus on designing effective reward models for generative models.
+      </p>
         
         
       <!-- <p>Goal: challenge conventional notions of what robots can achieve, develop robots that improves everyone's life. Focus: developing intelligent robots being able to do useful tasks with <u>intelligence, generalizability, agility and safety</u>. Method: learning-based methods that scale with the computation and data. Robots: Mobile robots, legged robots, robotic manipulators, and humanoid robots.
@@ -234,6 +233,16 @@
     
           <p align="justify" id="flashportrait_abs" style="display: none;"> <i>Current diffusion-based acceleration methods for long-portrait animation struggle to ensure identity (ID) consistency. This paper presents FlashPortrait, an end-to-end video diffusion transformer capable of synthesizing ID-preserving, infinite-length videos while achieving up to 6$\times$ acceleration in inference speed. In particular, FlashPortrait begins by computing the identity-agnostic facial expression features with an off-the-shelf extractor. It then introduces a Normalized Facial Expression Block to align facial features with diffusion latents by normalizing them with their respective means and variances, thereby improving identity stability in facial modeling. During inference, FlashPortrait adopts a dynamic sliding-window scheme with weighted blending in overlapping areas, ensuring smooth transitions and ID consistency in long animations. In each context window, based on the latent variation rate at particular timesteps and the derivative magnitude ratio among diffusion layers, FlashPortrait utilizes higher-order latent derivatives at the current timestep to directly predict latents at future timesteps, thereby skipping several denoising steps and achieving 6$\times$ speed acceleration. Experiments on benchmarks show the effectiveness of FlashPortrait both qualitatively and quantitatively.</i></p>
 
+          <pre xml:space="preserve" style="display: none;">@article{tu2025flashportrait,
+  title={FlashPortrait: 6$\times$ Faster Infinite Portrait Animation with Adaptive Latent Prediction},
+  author={Tu, Shuyuan and Pan, Yueming and Huang, Yinming and Han, Xintong and Xing, Zhen and Dai, Qi and Qiu, Kai and Luo, Chong and Wu, Zuxuan},
+  journal={arXiv preprint arXiv:2512.16900},
+  year={2025}
+}</pre>
+          </div>
+        </td>
+      </tr>
+
           <tr>
             <td width="40%" valign="top" align="center">
               <a href="https://francis-rings.github.io/StableAvatar/">
@@ -266,16 +275,14 @@
               
         
               <p align="justify" id="stableavatar_abs" style="display: none;"> <i>Current diffusion models for audio-driven avatar video generation struggle to synthesize long videos with natural audio synchronization and identity consistency. This paper presents StableAvatar, the first end-to-end video diffusion transformer that synthesizes infinite-length high-quality videos without post-processing. Conditioned on a reference image and audio, StableAvatar integrates tailored training and inference modules to enable infinite-length video generation. We observe that the main reason preventing existing models from generating long videos lies in their audio modeling. They typically rely on third-party off-the-shelf extractors to obtain audio embeddings, which are then directly injected into the diffusion model via cross-attention. Since current diffusion backbones lack any audio-related priors, this approach causes severe latent distribution error accumulation across video clips, leading the latent distribution of subsequent segments to drift away from the optimal distribution gradually. To address this, StableAvatar introduces a novel Time-step-aware Audio Adapter that prevents error accumulation via time-step-aware modulation. During inference, we propose a novel Audio Native Guidance Mechanism to further enhance the audio synchronization by leveraging the diffusion's own evolving joint audio-latent prediction as a dynamic guidance signal. To enhance the smoothness of the infinite-length videos, we introduce a Dynamic Weighted Sliding-window Strategy that fuses latent over time. Experiments on benchmarks show the effectiveness of StableAvatar both qualitatively and quantitatively.</i></p>
-        
 
-<pre xml:space="preserve" style="display: none;">
-  @article{tu2025flashportrait,
-    title={FlashPortrait: 6$\times$ Faster Infinite Portrait Animation with Adaptive Latent Prediction},
-    author={Tu, Shuyuan and Pan, Yueming and Huang, Yinming and Han, Xintong and Xing, Zhen and Dai, Qi and Qiu, Kai and Luo, Chong and Wu, Zuxuan},
-    journal={arXiv preprint arXiv:2512.16900},
-    year={2025}
-  }
-</pre>
+              <pre xml:space="preserve" style="display: none;">@article{tu2025stableavatar,
+  title={Stableavatar: Infinite-length audio-driven avatar video generation},
+  author={Tu, Shuyuan and Pan, Yueming and Huang, Yinming and Han, Xintong and Xing, Zhen and Dai, Qi and Luo, Chong and Wu, Zuxuan and Jiang, Yu-Gang},
+  journal={arXiv preprint arXiv:2508.08248},
+  year={2025}
+}</pre>
+
       </div>
     </td>
   </tr>
