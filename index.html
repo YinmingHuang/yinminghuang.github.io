@@ -3,6 +3,8 @@
 
 <head>
 
+  <meta charset="UTF-8">
+
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
   <style type="text/css">
   /* Design Credits: Jon Barron and Deepak Pathak and Abhishek Kar and Saurabh Gupta*/
@@ -130,7 +132,7 @@
         I am a first-year Ph.D. student at <a href="https://www.fudan.edu.cn/">Fudan University</a>, jointly trained with <a href="https://www.sii.edu.cn/">Shanghai Innovation Institute</a>, under the supervision of <a href="https://zxwu.azurewebsites.net/">Prof. Zuxuan Wu</a>. I also work closely with <a href="https://github.com/Francis-Rings">Shuyuan Tu</a>. Prior to that, I received my B.Eng. degree in Artificial
         Intelligence from <a href="https://www.fudan.edu.cn/">Fudan University</a> in 2026.
         </p>
-        
+
       <p>
          My research focuses on reinforcement learning for video generation and agentic visual generation. I am particularly interested in building generative models that learn from external feedback and developing agentic frameworks that enable them to adapt and improve over time through interaction.
       </p>
@@ -202,6 +204,85 @@
 
       <tr>
         <td width="40%" valign="top" align="center">
+          <a href="https://francis-rings.github.io/Prism/">
+              <img src="images/prism/framework.jpg" alt="Prism dynamic sparse attention framework" width="90%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+          </a>
+        </td>
+        <td width="60%" valign="top">
+          <p><a href="https://francis-rings.github.io/Prism/" id="PRISM">
+          <heading>Prism: Dynamic Sparse Attention for Native 2K Joint Video-Audio Generation Model Training  </heading></a><a class="github-button"
+          href="https://github.com/Tencent-Hunyuan/Prism"
+          data-icon="octicon-star"
+          data-show-count="true"
+          aria-label="Star Tencent-Hunyuan/Prism on GitHub">
+         Star
+       </a>
+       <br>
+          Shuyuan Tu, Qi Tian, <strong>Yinming Huang</strong>, Yue Wu, Xintong Han, Kaihang Pan, Weijie Kong, Jiangfeng Xiong, Jian-Wei Zhang, Zuxuan Wu, Yu-Gang Jiang<br>
+          </p>
+
+          <div class="paper" id="prism">
+          <a href="https://francis-rings.github.io/Prism/">webpage</a> |
+          <a href="javascript:toggleblock('prism_abs')">abstract</a> |
+          <a shape="rect" href="javascript:togglebib('prism')" class="togglebib">bibtex</a> |
+          <a href="https://arxiv.org/abs/2610.05416">arXiv</a> |
+          <a href="https://github.com/Tencent-Hunyuan/Prism">code</a> |
+          <a href="https://huggingface.co/FrancisRing/Prism/tree/main">model</a> |
+          <a href="https://www.youtube.com/watch?v=XEL2IkSOSQw">YouTube</a> |
+
+          <p align="justify" id="prism_abs" style="display: none;"> <i>Natively training joint video-audio generation models at higher resolutions empowers them to learn richer visual details and sharper motion dynamics. However, full attention incurs quadratic cost and, as resolution increases, spreads attention over increasingly redundant tokens, diluting learning signals for informative content and disrupting pretrained priors. Existing sparse attention methods either target training-free acceleration or overlook the unique structure of joint video-audio data, where cross-modal interactions are inherently concentrated around sound-producing regions. To address this, we propose Prism, a dynamic sparse attention framework for natively training joint video-audio generation models at 2K. In particular, Prism organizes the token sequence into spatiotemporal macro-zones, enabling the attention structure to adapt to local content. For each zone, it estimates local information structure via video feature variance along the channel and feature norms from the audio-to-video cross-attention, jointly capturing how visual content varies directionally and how strongly audio influences each visual region. Based on these signals, Prism dynamically assigns a tailored block shape to each zone, applying finer partitioning along axes of rapid visual content variation and strong audio-visual coupling. This encourages tokens within each block to remain semantically coherent, allowing block-level features to capture both visual content and joint video-audio interaction patterns. Prism further adopts a hybrid block selection strategy to dynamically determine per-query sparsity. Experiments show that Prism achieves 2.5&times; training speedup compared to full attention, while surpassing it in generation quality.</i></p>
+
+          <pre xml:space="preserve" style="display: none;">@article{tu2026prism,
+  title={Prism: Dynamic Sparse Attention for Native 2K Joint Video-Audio Generation Model Training},
+  author={Tu, Shuyuan and Tian, Qi and Huang, Yinming and Wu, Yue and Han, Xintong and Pan, Kaihang and Kong, Weijie and Xiong, Jiangfeng and Zhang, Jian-Wei and Wu, Zuxuan and Jiang, Yu-Gang},
+  journal={arXiv preprint arXiv:2610.05416},
+  year={2026}
+}</pre>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="40%" valign="top" align="center">
+          <a href="https://github.com/YinmingHuang/Awesome-agentic-visual-generation-model">
+              <img src="images/agentic-visual-generation/fig1-controller-decision-scope.png" alt="Agentic visual generation controller-capability taxonomy" width="90%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+          </a>
+        </td>
+        <td width="60%" valign="top">
+          <p><a href="https://github.com/YinmingHuang/Awesome-agentic-visual-generation-model" id="AGENTICVISUALGENERATION">
+          <heading>Agentic Visual Generation: From Generative Models to Agentic Control  </heading></a><a class="github-button"
+          href="https://github.com/YinmingHuang/Awesome-agentic-visual-generation-model"
+          data-icon="octicon-star"
+          data-show-count="true"
+          aria-label="Star YinmingHuang/Awesome-agentic-visual-generation-model on GitHub">
+         Star
+       </a>
+       <br>
+          <strong>Yinming Huang*</strong>, Shuyuan Tu*, Xi Yan*, Jiahao Zhan, Zihan Yang, Zhen Xing, Hui Zhang, Tiehua Zhang, Yu-Gang Jiang, Zuxuan Wu<br>
+          </p>
+
+          <div class="paper" id="agenticvisualgeneration">
+          <a href="https://github.com/YinmingHuang/Awesome-agentic-visual-generation-model">webpage</a> |
+          <a href="javascript:toggleblock('agenticvisualgeneration_abs')">abstract</a> |
+          <a shape="rect" href="javascript:togglebib('agenticvisualgeneration')" class="togglebib">bibtex</a> |
+          <a href="https://arxiv.org/abs/2609.06758">arXiv</a> |
+          <a href="https://github.com/YinmingHuang/Awesome-agentic-visual-generation-model">code</a> |
+          <a href="https://mp.weixin.qq.com/s/3DU7XR3h59UQWdoFiqnKnw">机器之心</a> |
+
+          <p align="justify" id="agenticvisualgeneration_abs" style="display: none;"> <i>Visual generation is evolving from generative models used through a single invocation into agentic control processes that can plan, select tools, inspect intermediate synthesized outputs, revise failures, and reuse prior experience. In most existing systems, the controller is an LLM or VLM, while visual generation models serve as tools or executors. However, existing work lacks a consistent criterion for determining when a generation system becomes agentic. Planning depth, tool use, multi-role collaboration, and reinforcement learning are often treated as evidence of agenticity, even though none of them necessarily determines which generation decisions the controller can make. We organize the field according to what the controller can directly control in the generation process. At L1 Conditioning Control, the controller prepares the input to a predetermined generator but does not control which visual operation is executed. At L2 Execution Control, it selects and invokes actual generation, editing, rendering, or other content-modifying operations. At L3 Outcome-Adaptive Control, it observes an intermediate outcome and uses that observation to change a subsequent operation within the current task. At L4 Experience-Adaptive Control, it retains experience from completed tasks and uses that experience to change decisions on future tasks. L0 Fixed Support separately denotes generators, editors, evaluators, reward models, benchmarks, and fixed pipelines without a deployed controller that makes generation-level decisions. These levels describe a progressively broader decision-making scope rather than model size, system complexity, output quality, tool or role count, or training method. Applying this framework across image, video, editing, 3D, world, slide, and user-interface generation reveals how controller capabilities have evolved and how their mechanisms are distributed across levels.</i></p>
+
+          <pre xml:space="preserve" style="display: none;">@article{huang2026agentic,
+  title={Agentic Visual Generation: From Generative Models to Agentic Control},
+  author={Huang, Yinming and Tu, Shuyuan and Yan, Xi and Zhan, Jiahao and Yang, Zihan and Xing, Zhen and Zhang, Hui and Zhang, Tiehua and Jiang, Yu-Gang and Wu, Zuxuan},
+  journal={arXiv preprint arXiv:2609.06758},
+  year={2026}
+}</pre>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="40%" valign="top" align="center">
           <a href="https://sharelab-sii.github.io/VA-Judger/">
               <img src="images/vajudger/pipeline.webp" alt="VA-Judger training pipeline" width="90%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
           </a>
@@ -229,6 +310,7 @@
           <a href="https://huggingface.co/datasets/ShareLab-SII/VA-Judger-Bench">dataset</a> |
           <a href="https://www.youtube.com/watch?v=HUiEFLTY9-E">YouTube</a> |
           <a href="https://www.bilibili.com/video/BV1Sz8c68EV5/?vd_source=9e73e8b16636f0c4c833f867173cb014">Bilibili</a> |
+          <a href="https://mp.weixin.qq.com/s/nvKrctrR-bXVrPfwnd0L2g">量子位</a> |
 
           <p align="justify" id="vajudger_abs" style="display: none;"> <i>Using reinforcement learning to post-train joint video-audio generation models requires a reward signal. Existing methods construct this reward by combining metrics for individual quality dimensions, including audio quality, visual fidelity, and synchronization. However, these metrics evaluate perceptual dimensions separately and fail to capture the overall semantic and temporal coherence among the text prompt, video, and audio that shapes human preferences. More critically, they are poorly aligned with actual human judgments. Optimizing models against these metrics encourages reward hacking, generating video-audio content that achieves high scores on these metrics yet appears incoherent or unfaithful to human viewers. To address this problem, we first construct VAPref-10K for joint video-audio generation, comprising 9K prompts and 10.3K fine-grained paired comparisons from generation models. We also introduce the VA-Judger-Bench benchmark with both in-domain and out-of-domain model comparisons to evaluate whether reward models truly align with human preferences. We further propose VA-Judger, a chain-of-thought omni-reward model for joint video-audio generation. VA-Judger first learns from pairs with clear quality gaps, then distills format-valid responses for harder near-quality comparisons through rejection sampling verified against human annotations, and finally performs dimension-wise reinforcement learning for denser reward signals. Experiments show that VA-Judger outperforms metric baselines in predicting human preferences on both in-domain and out-of-domain evaluations. Using its human-aligned rewards to post-train an audio-video generation model also improves most automatic metrics and human preference.</i></p>
 
@@ -241,6 +323,50 @@
           </div>
         </td>
       </tr>
+
+      <tr>
+            <td width="40%" valign="top" align="center">
+              <a href="https://francis-rings.github.io/StableAvatar/">
+                  <img src="images/stableavatar/framework_00.png" alt="sym" width="90%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+              </a>
+            </td>
+            <td width="60%" valign="top">
+              <p><a href="https://francis-rings.github.io/StableAvatar/" id="STABLEAVATAR">
+              <heading>[NeurIPS 2026] StableAvatar: Infinite-Length Audio-Driven Avatar Video Generation  </heading></a><a class="github-button"
+              href="https://github.com/Francis-Rings/StableAvatar"
+              data-icon="octicon-star"
+              data-show-count="true"
+              aria-label="Star Francis-Rings/StableAvatar on GitHub">
+             Star
+           </a>
+           <br>
+              Shuyuan Tu, Yueming Pan, <strong>Yinming Huang</strong>, Xintong Han, Zhen Xing, Qi Dai, Chong Luo, Zuxuan Wu, Yu-Gang Jiang<br>
+              </p>
+
+              <div class="paper" id="stableavatar">
+              <a href="https://francis-rings.github.io/StableAvatar/">webpage</a> |
+              <a href="javascript:toggleblock('stableavatar_abs')">abstract</a> |
+              <a shape="rect" href="javascript:togglebib('stableavatar')" class="togglebib">bibtex</a> |
+              <a href="https://arxiv.org/abs/2508.08248">arXiv</a> |
+              <a href="https://github.com/Francis-Rings/StableAvatar">code</a> |
+              <a href="https://www.youtube.com/watch?v=6lhvmbzvv3Y">YouTube</a> |
+              <a href="https://www.bilibili.com/video/BV1hUt9z4EoQ/?vd_source=4f0cebca1f5f6e82beeaeb683fe509c5">Bilibili</a> |
+              <a href="https://mp.weixin.qq.com/s/BoHk9XZRdaSGMSK-9_PpGA">机器之心</a> |
+              <a href="https://huggingface.co/spaces/YinmingHuang/StableAvatar">online demo</a>
+
+
+              <p align="justify" id="stableavatar_abs" style="display: none;"> <i>Current diffusion models for audio-driven avatar video generation struggle to synthesize long videos with natural audio synchronization and identity consistency. This paper presents StableAvatar, the first end-to-end video diffusion transformer that synthesizes infinite-length high-quality videos without post-processing. Conditioned on a reference image and audio, StableAvatar integrates tailored training and inference modules to enable infinite-length video generation. We observe that the main reason preventing existing models from generating long videos lies in their audio modeling. They typically rely on third-party off-the-shelf extractors to obtain audio embeddings, which are then directly injected into the diffusion model via cross-attention. Since current diffusion backbones lack any audio-related priors, this approach causes severe latent distribution error accumulation across video clips, leading the latent distribution of subsequent segments to drift away from the optimal distribution gradually. To address this, StableAvatar introduces a novel Time-step-aware Audio Adapter that prevents error accumulation via time-step-aware modulation. During inference, we propose a novel Audio Native Guidance Mechanism to further enhance the audio synchronization by leveraging the diffusion's own evolving joint audio-latent prediction as a dynamic guidance signal. To enhance the smoothness of the infinite-length videos, we introduce a Dynamic Weighted Sliding-window Strategy that fuses latent over time. Experiments on benchmarks show the effectiveness of StableAvatar both qualitatively and quantitatively.</i></p>
+
+              <pre xml:space="preserve" style="display: none;">@inproceedings{tu2026stableavatar,
+  title={Stableavatar: Infinite-length audio-driven avatar video generation},
+  author={Tu, Shuyuan and Pan, Yueming and Huang, Yinming and Han, Xintong and Xing, Zhen and Dai, Qi and Luo, Chong and Wu, Zuxuan and Jiang, Yu-Gang},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2026}
+}</pre>
+
+      </div>
+    </td>
+  </tr>
 
       <tr>
         <td width="40%" valign="top" align="center">
@@ -282,50 +408,6 @@
           </div>
         </td>
       </tr>
-
-          <tr>
-            <td width="40%" valign="top" align="center">
-              <a href="https://francis-rings.github.io/StableAvatar/">
-                  <img src="images/stableavatar/framework_00.png" alt="sym" width="90%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
-              </a>
-            </td>
-            <td width="60%" valign="top">
-              <p><a href="https://francis-rings.github.io/StableAvatar/" id="STABLEAVATAR">
-              <heading>StableAvatar: Infinite-Length Audio-Driven Avatar Video Generation  </heading></a><a class="github-button"
-              href="https://github.com/Francis-Rings/StableAvatar"
-              data-icon="octicon-star"
-              data-show-count="true"
-              aria-label="Star Francis-Rings/StableAvatar on GitHub">
-             Star
-           </a>
-           <br>
-              Shuyuan Tu, Yueming Pan, <strong>Yinming Huang</strong>, Xintong Han, Zhen Xing, Qi Dai, Chong Luo, Zuxuan Wu, Yu-Gang Jiang<br>
-              </p>
-        
-              <div class="paper" id="stableavatar">
-              <a href="https://francis-rings.github.io/StableAvatar/">webpage</a> |
-              <a href="javascript:toggleblock('stableavatar_abs')">abstract</a> |
-              <a shape="rect" href="javascript:togglebib('stableavatar')" class="togglebib">bibtex</a> |
-              <a href="https://arxiv.org/abs/2508.08248">arXiv</a> |
-              <a href="https://github.com/Francis-Rings/StableAvatar">code</a> |
-              <a href="https://www.youtube.com/watch?v=6lhvmbzvv3Y">YouTube</a> |
-              <a href="https://www.bilibili.com/video/BV1hUt9z4EoQ/?vd_source=4f0cebca1f5f6e82beeaeb683fe509c5">Bilibili</a> |
-              <a href="https://mp.weixin.qq.com/s/BoHk9XZRdaSGMSK-9_PpGA">机器之心</a> |
-              <a href="https://huggingface.co/spaces/YinmingHuang/StableAvatar">online demo</a>
-              
-        
-              <p align="justify" id="stableavatar_abs" style="display: none;"> <i>Current diffusion models for audio-driven avatar video generation struggle to synthesize long videos with natural audio synchronization and identity consistency. This paper presents StableAvatar, the first end-to-end video diffusion transformer that synthesizes infinite-length high-quality videos without post-processing. Conditioned on a reference image and audio, StableAvatar integrates tailored training and inference modules to enable infinite-length video generation. We observe that the main reason preventing existing models from generating long videos lies in their audio modeling. They typically rely on third-party off-the-shelf extractors to obtain audio embeddings, which are then directly injected into the diffusion model via cross-attention. Since current diffusion backbones lack any audio-related priors, this approach causes severe latent distribution error accumulation across video clips, leading the latent distribution of subsequent segments to drift away from the optimal distribution gradually. To address this, StableAvatar introduces a novel Time-step-aware Audio Adapter that prevents error accumulation via time-step-aware modulation. During inference, we propose a novel Audio Native Guidance Mechanism to further enhance the audio synchronization by leveraging the diffusion's own evolving joint audio-latent prediction as a dynamic guidance signal. To enhance the smoothness of the infinite-length videos, we introduce a Dynamic Weighted Sliding-window Strategy that fuses latent over time. Experiments on benchmarks show the effectiveness of StableAvatar both qualitatively and quantitatively.</i></p>
-
-              <pre xml:space="preserve" style="display: none;">@article{tu2025stableavatar,
-  title={Stableavatar: Infinite-length audio-driven avatar video generation},
-  author={Tu, Shuyuan and Pan, Yueming and Huang, Yinming and Han, Xintong and Xing, Zhen and Dai, Qi and Luo, Chong and Wu, Zuxuan and Jiang, Yu-Gang},
-  journal={arXiv preprint arXiv:2508.08248},
-  year={2025}
-}</pre>
-
-      </div>
-    </td>
-  </tr>
 
 
 
